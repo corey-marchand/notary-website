@@ -1,9 +1,12 @@
 import NavigationBar from '../../components/NavBar/Navbar';
 import PictureBackDrop from '../../components/Jumbotron/jumbotron';
-import { Container } from 'react-bootstrap';
+import ContactForm from '../../components/form/form';
+import Footer from '../../components/footer/footer';
+
 import NotaryPicture from '../../assets/notary.jpg';
 import MobilePicture from '../../assets/traveling.jpg';
 
+import { Container } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
@@ -13,36 +16,48 @@ function Home() {
     <>
         <NavigationBar />
         <PictureBackDrop />
-      {/* <Container> */}
-        <div style={{margin: '0px 90px'}}>
+        <div style={{margin: '120px 120px'}}>
           <Row>
               <Col><img style={{height:'500px', width:'100%'}} src={ NotaryPicture }/></Col>
               <Col><img style={{height:'500px', width:'100%'}} src={ MobilePicture }/></Col>
           </Row>
+          <br />
           <Row>
               <Col><h2>About Puget Sound Notary</h2></Col>
               <Col><h2>A mobile Notary Service</h2></Col>
           </Row>
           <Row>
-                <Col>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+              <Col><p style={{ fontSize: '24px'}}>Corey J. Marchand, Notary Signing Agent</p></Col>
+          </Row>
+          <Row>
+                <Col style={{ borderBottom: 'solid #84A9D9'}}>
+                    <ul>
+                        <li>Certified Notary Signing Agent of he NNA</li>
+                        <li>Established in 2020</li>
+                        <li>Licensed, bonded, and insured</li>
+                        <li>Customer information handled securely and profesionaly</li>
+                        <li>Accepts eDocs and documents by mail</li>
+                        <li>Complient in all GLBA background check requirements</li>
+                    </ul>
                 </Col>
-                <Col>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                <Col style={{ borderBottom: 'solid #84A9D9'}}>
+                    <ul style={{ listStyle: 'none'}}>
+                        <li>Puget Sound Notary Service offers convenient mobile notary service that fits your schedule.  Puget Sound Notary Service can meet you anywhere in the following counties: King, Pierce, and Kitsap.  We can also service outside of these counties, depending on the situation and fees.</li>
+                    </ul>
                 </Col>
           </Row>
         </div>
-          {/* <div>
-            <img style={{height:'500px', width:'45%', margin: '0px 50px'}} src={ NotaryPicture }/>
-            <img style={{height:'500px', width:'45%', margin: '0px 22px 0px'}} src={ NotaryPicture }/>
-          </div> */}
-        {/* <Image style={{ backgroundImage: `url(${NotaryPicture})`, backgroundPosition: 'center', height: '50vh'}} /> */}
-        {/* <Image src={NotaryPicture}  /> */}
-      {/* </Container> */}
+        <div style={{ height: '600px', color: 'black', margin: '100px 0px 0px 0px', backgroundColor: '#BEBEBE'}}>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+                <Container>
+                        <ContactForm style={{ position: 'absolute', top: '0px'}} />
+                </Container>
+        </div>
+        <Footer />
     </>
   );
 }

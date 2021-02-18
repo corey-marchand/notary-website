@@ -10,15 +10,14 @@ function NavigationBar() {
   return (
     <>
     <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">Puget Sound Notary</Navbar.Brand>
+      <Navbar.Brand href="home">Puget Sound Notary</Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="home">Home</Nav.Link>
         <Nav.Link href="features">Real Estate Signings</Nav.Link>
         <Nav.Link href="pricing">Fees</Nav.Link>
       </Nav>
       <Form inline>
-        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-        <Button variant="outline-info">Search</Button>
+        <Navbar.Brand>Text or Call (253) 514-0842</Navbar.Brand>
       </Form>
     </Navbar>
     </>
